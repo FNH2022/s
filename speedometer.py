@@ -8,5 +8,6 @@ button = digitalio.DigitalInOut(board.GPIO_P36)
 button.direction = digitalio.Direction.INPUT
 # use an external pullup since we don't have internal PU's
 #button.pull = digitalio.Pull.UP
-se = not button
-se("we got Input")
+while not button :
+  time.sleep(.3)
+ print("got it")
