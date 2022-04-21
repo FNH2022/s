@@ -10,4 +10,5 @@ button.direction = digitalio.Direction.INPUT
 #button.pull = digitalio.Pull.UP
 while not button :
   time.sleep(.3)
- print("got it")
+  
+print("got it")
